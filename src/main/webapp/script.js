@@ -50,7 +50,7 @@
             fullNameIsValid = false;
             let error = document.getElementById("fullNameHelp");
             const nonLatinRegex = /[^a-z A-z]+/;
-            const fullNameRegex = /^[a-zA-Z]+( [a-zA-Z]+)+$/;
+            const fullNameRegex = /^[A-Z][a-zA-Z]+( [A-Z][a-zA-Z]+)+$/;
             console.log("name is " + fullName.value);
             if (fullName.value.length == 0) {
                 error.textContent = "Full name must not be empty!";
