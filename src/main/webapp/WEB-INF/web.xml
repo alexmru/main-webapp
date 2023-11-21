@@ -10,7 +10,15 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   <servlet>
-    <description></description>
+    <display-name>SignupServlet</display-name>
+    <servlet-name>SignupServlet</servlet-name>
+    <servlet-class>website.main.SignupActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignupServlet</servlet-name>
+    <url-pattern>/signup-action</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <display-name>DownloadServlet</display-name>
     <servlet-name>DownloadServlet</servlet-name>
     <servlet-class>website.main.DownloadServlet</servlet-class>
@@ -20,13 +28,11 @@
     <url-pattern>/download</url-pattern>
   </servlet-mapping>
   <servlet>
-    <description></description>
-    <display-name>SignupServlet</display-name>
-    <servlet-name>SignupServlet</servlet-name>
-    <servlet-class>website.main.SignupServlet</servlet-class>
+    <servlet-name>SignupFormServlet</servlet-name>
+    <jsp-file>/signup.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
-    <servlet-name>SignupServlet</servlet-name>
+    <servlet-name>SignupFormServlet</servlet-name>
     <url-pattern>/signup</url-pattern>
   </servlet-mapping>
 </web-app>
